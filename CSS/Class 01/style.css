@@ -1,0 +1,17 @@
+/* h1{
+    color: brown;
+} */
+
+body{
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #2c3e50;
+    text-align: center;
+}
+p{
+    color: #333;
+    padding: 10px;
+}

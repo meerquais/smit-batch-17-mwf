@@ -1,0 +1,110 @@
+/* h1{
+    color: red;
+} */
+
+
+/* selector{
+    property:value;
+} */
+
+/* Universal Selector  --> *   */
+
+/* *{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Type/Element Selector --> type/element name(h1,p,ul,  */
+
+
+/* h1{
+    color: red;
+}
+p{
+    color: blue;
+} */
+
+
+/* Class Selector ---> " .classname   "  */
+
+/* .heading1{
+    color: green;
+} */
+
+/* ID Selector ---> " #IdName " */
+
+/* #list{
+    color: gold;
+} */
+
+/* h1{
+    color: burlywood;
+}
+p{
+    color: burlywood;
+}
+ul{
+    color: burlywood;
+} */
+
+/* Group Selector  */
+
+/* h1,p,ul{
+    color: brown;
+} */
+
+/* Descendant Selector  */
+
+
+/* div h1{
+    color: blueviolet;
+} */
+
+
+/* Child Selector  */
+
+/* parent > child {
+    property:value;
+} */
+
+/* div > h1{
+    color: red;
+} */
+
+/* h2 + h1{
+    color: red;
+} */
+
+/* div{
+    color: red;
+} */
+
+/* h1{
+    color: blue;
+}
+
+p{
+    color: #1b816c;
+}
+div{
+    color: rgb(238, 177, 24);
+}
+ul{
+    color: hsl(23, 95%, 40%);
+} */
+
+h1{
+    background-color: red;
+    color: white;
+    opacity: 0.9;
+}
+p{
+    background-color: #cf6099;
+    opacity: 0.3;
+}
+div{
+    background-color: rgba(109, 201, 238, 0.1);
+}
+ul{
+    background-color: hsla(144, 91%, 33%, 0.3);
+}
