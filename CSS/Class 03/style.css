@@ -1,0 +1,214 @@
+    /* font family  */
+
+/* h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    font-family: 'Courier New', Courier, monospace;
+}
+div{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+
+    /* font size  */
+
+/* h1{
+    font-size: 48px;
+}
+
+p{
+    font-size: 32px;
+}
+span{
+    font-size: 170%;
+}
+div{
+    font-size: 24px;
+} */
+
+
+    /* font style  */
+
+/* p{
+    font-style: italic;
+}
+h1{
+    font-style: oblique;
+}
+div{
+    font-style: normal;
+} */
+
+    /* font weight  */
+
+
+/* h1{
+    font-weight: lighter;
+}
+p{
+    font-weight: bolder;
+}
+span{
+    font-weight: 600;
+} */
+
+    /* text transform  */
+
+
+/* h1{
+    text-transform: uppercase;
+}
+p{
+    text-transform: lowercase;
+}
+span{
+    text-transform: capitalize;
+} */
+
+    /* text-decoration  */
+
+
+/* h1{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-decoration: overline;
+}
+span{
+    text-decoration: line-through;
+} */
+
+
+    /* line height  */
+
+
+/* p{
+    line-height: 5;
+}
+
+h1{
+    line-height: 60px;
+} */
+
+
+    /* word spacing  */
+
+
+/* h1{
+    word-spacing: 20px;
+}
+p{
+    word-spacing: 50px;
+}
+span{
+    word-spacing: 0;
+} */
+
+
+    /* letter spacing  */
+
+/* h1{
+    letter-spacing: 5px;
+}
+
+p{
+    letter-spacing: 10px;
+}
+
+span{
+    letter-spacing: -1px;
+} */
+
+
+    /* text align  */
+
+
+/* h1{
+    text-align: left;
+}
+p{
+    text-align: right;
+}
+
+span{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+} */
+
+
+
+    /* text indent  */
+
+
+/* h1{
+    text-indent: 10px;
+} */
+
+
+        /* text shadow  */
+
+
+
+/* h1{
+    text-shadow: -8px -15px 3px gray;
+}
+p{
+    text-shadow: 10px 20px 4px red;
+}
+span{
+    text-shadow: -5px -10px 2px blue;
+} */
+
+
+        /* pseudo-elements */
+/* 
+h1::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+div::first-line{
+    color: blue;
+} */
+
+
+/* a:link{
+    color: red;
+    text-decoration: none;
+} */
+
+
+/* a:visited{
+    color: brown;
+    font-size: 40px;
+} */
+
+/* h1:hover{
+    color: red;
+}
+p:hover{
+    text-decoration: underline;
+} */
+
+/* 
+h1:active{
+    color: blue;
+} */
+
+
+input:focus{
+    color: red;
+    background-color: gray;
+    outline: none;
+}
