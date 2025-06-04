@@ -1,0 +1,125 @@
+h1{
+    color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .container{
+    background-color: blue;
+    width: 50%;
+    height: 300px;
+}
+.inner-container{
+    background-color: red;
+    width: 50%;
+    height: 500px;
+} */
+
+/* .container{ */
+    /* background-color: blue; */
+    /* min-width: 500px; */
+    /* width: 100%; */
+    /* max-width: 500px; */
+/* } */
+
+/* .container{
+    background-color: red;
+    width: 500px;
+
+}
+.container1{
+    background-color: blue;
+    width: 50%;
+    
+}
+.container2{
+    background-color: green;
+    width: 50vw;
+} */
+
+
+/* .container{
+    background-color: red;
+    width: 70%;
+    min-width: 500px;
+
+    
+}
+.container1{
+    background-color: blue;
+    max-width: 700px;
+    
+}
+.container2{
+    background-color: green;
+    
+} */
+
+/* .container{ */
+    /* background-color: greenyellow; */
+    /* width: 500px; */
+    /* height: 400px; */
+    /* min-height: 400px; */
+    /* max-height: 400px; */
+    /* overflow: scroll; */
+    /* margin: 30px 0px 0px 50px ; */
+    /* margin: 40px 70px; */
+    /* margin: 50px; */
+    /* padding: 20px; */
+    /* margin: 0px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue; 
+     border: 1px solid red; */
+
+/* } */
+
+/* h1{
+    display: inline-block;
+    width: 300px;
+    background-color: blue;
+}
+p{
+    display: inline-block;
+    background-color: aqua;
+    width: 200px;
+}
+a{
+    display: none;
+} */
+
+/* .container, .container1 , .container2,.container3{
+    width: 400px;
+    margin-top: 20px;
+}
+.container{
+    background-color: red;
+    display: none;
+}
+.container1{
+    background-color: blue;
+}
+.container2{
+    background-color: green;
+    visibility: hidden;
+}
+.container3{
+    background-color: brown;
+} */
+
+.card{
+    width: 70%;
+    min-width: 300px;
+    max-width: 800px;
+    min-height: 200px;
+    max-height: 600px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* overflow-y: auto; */
+    overflow-y: auto;
+    margin: 30px auto;
+}
