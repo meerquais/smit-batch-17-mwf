@@ -1,0 +1,80 @@
+h1{
+    color: red;
+}
+
+/* 
+.container{
+    background-color: blue;
+    width: 60%;
+    min-width: 300px ;
+    max-width: 300px;
+    height: 100vh;
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: scroll;
+} */
+
+/* .container{
+    background-color: red;
+    width: 50%;
+    min-width:300px;
+    max-width: 800px;
+} */
+
+
+/* .container{
+    width: 300px;
+    height: 300px;
+     border-width: 1px;
+     border-style: solid;
+    border-color: red;
+    border: 1px solid blue;
+    margin: 20px 30px 40px 50px;
+    margin: 20px auto;
+    padding: 20px;
+    display: none;
+    visibility: hidden;
+   
+} */
+
+/* .box1{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin: 20px auto;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    margin: 30px auto;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1)    ;
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+
+}
+body{
+    background-color: rgb(193, 220, 223);
+} */
+
+
+.box{
+    width: 350px;
+    height: 350px;
+    border:1px solid red;
+    border-radius: 50%;
+}
