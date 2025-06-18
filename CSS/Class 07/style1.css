@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 50%;
+    margin: 0 auto;
+    /* border: 1px solid yellow; */
+}
+
+.nav-logo{
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+.nav-logo img{
+    width: 20px;
+}
+
+.nav-list{
+    display: inline-block;
+    /* border: 1px solid blue; */
+}
+.nav-icons img{
+    width: 20px;
+}
+.nav-icons {
+    display: inline-block;
+    /* margin-left: 9rem; */
+    /* border: 1px solid green; */
+}
+.nav-list ul {
+    display: inline-block;
+}
+
+.nav-list ul li{
+    display: inline-block;
+    padding: 0px 6px;
+}
+
+.hero1{
+    width: 100%;
+    height: 700px;
+    background-image: url("./assets/hero1.jpeg");
+    /* border: 1px solid red; */
+}
+.hero1img{
+    width: 20%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.hero1btn{
+    width: 1%;
+    margin:20px auto;
+}
+.hero1btn button{
+    border: 1px solid #06c;
+    padding: 15px 25px;
+    background-color: transparent;
+    border-radius: 25px;
+    color: #06c;
+}
+.hero1btn button:hover{
+    background-color: #06c;
+    color: white;
+    cursor: pointer;
+}
+
+.hero2{
+    width: 100%;
+    height: 700px;
+    background-image: url("./assets/hero2.jpeg");
+    background-position: center;
+    margin: 10px 0px;
+}
+.hero2Content{
+    width: 20%;
+    margin: 0px auto;
+    /* border: 1px solid red; */
+}
+.hero2Content h1{
+    font-size: 46px;
+    /* margin-top: 60px; */
+}
+.hero2Content p{
+    font-size: 28px;
+    width: 70%;
+    margin: 4px auto;
+    font-weight: bold;
+}
+.hero2Content button{
+    margin: 0px 100px;
+    border: none;
+    background-color: #06c;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+.hero2Content button:hover{
+    background-color: rgb(11, 74, 138);
+    cursor: pointer;
+
+}
+.hero3{
+    width: 100%;
+    height: 600px;
+    display: inline-block;
+}
+.hero3container1{
+    width: 50%;
+    height: 600px;
+    display: inline-block;
+    border: 1px solid red;
+    background-image: url("./assets/container1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero3container2{
+    width: 49%;
+    height: 600px;
+    display: inline-block;
+    border: 1px solid blue;
+    background-image: url("./assets/container2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
