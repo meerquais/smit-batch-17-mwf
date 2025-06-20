@@ -1,0 +1,94 @@
+h1{
+    color: red;
+}
+
+
+/* .box1{
+    width: 400px;
+    height: 300px;
+    background-color:blue;
+    position: relative;
+    left: 30px;
+    top: 50px;
+} */
+
+/* .box1{
+    width: 400px;
+    height: 300px;
+    background-color:blue;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+} */
+/* .box2{
+    width: 400px;
+    height: 300px;
+    background-color:red;
+    position: relative;
+    
+} */
+
+
+/* .parent{
+    width: 500px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+} */
+
+
+/* .fixed-box{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 20px;
+} */
+
+
+/* @media (max-width:  768px){
+
+    h1{
+        color: blue;
+    }
+
+
+}
+
+@media (max-width:576px){
+    h1{
+        color: green;
+    }
+} */
+
+
+.box{
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:600px){
+    .box{
+        background-color: orange;
+        font-size: 18px;
+    }
+}
