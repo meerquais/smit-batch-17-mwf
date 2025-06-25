@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(246, 244, 244, 0.9);
+    border: 1px solid red;
+}
+.nav-list ul{
+    display: flex;
+    gap: 20px;
+}
+.nav-list ul li{
+    list-style: none;
+    color: rgb(45, 44, 44);
+    cursor: pointer;
+}
+.nav-icons{
+    display: flex;
+    gap: 20px;
+}
+.nav-icons img{
+    cursor: pointer;
+}
