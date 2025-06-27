@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(246, 244, 244, 0.9);
+    /* border: 1px solid red; */
+}
+.nav-list ul{
+    display: flex;
+    gap: 20px;
+}
+.nav-list ul li{
+    list-style: none;
+    color: rgb(45, 44, 44);
+    cursor: pointer;
+}
+.nav-icons{
+    display: flex;
+    gap: 20px;
+}
+.nav-icons img{
+    cursor: pointer;
+}
+
+ /* navbar styles  */
+
+ /* section 1 styles  */
+
+
+.section1{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 550px;
+    background-image: url("./assets/section1bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    margin-bottom: 10px;
+}
+.sectionContent{
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+}
+.sectionContent h1{
+    text-align: center;
+    font-size: 42px;
+    color: rgb(38, 38, 38);
+
+}
+.sectionContent h2{
+    text-align: center;
+    color: rgb(38, 38, 38);
+}
+.sectionBtns{
+    width: 80%;
+    margin: 20px auto;
+}
+.sectionBtns .btn1{
+    border: none;
+    background-color: rgb(0, 113, 227);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+.sectionBtns .btn2{
+    border: 1px solid rgb(0, 113, 227);
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: rgb(0, 113, 227);
+}
+.sectionBtns .btn2:hover{
+    background-color: rgb(0, 113, 227);
+    color: white;
+    cursor: pointer;
+}
+.sectionContent p{
+    text-align: center;
+    font-size: 18px;
+    background: linear-gradient(to right, blue,purple, orange);
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+/* section 2 starts here  */
+
+.section2{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 600px;
+    background: url("./assets/section2bg.jpeg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2Content{
+    /* width: 30%; */
+    /* margin: 0 auto; */
+    /* margin-top: 20px; */
+}
+.section2h1{
+    background: url("./assets/section2heading2.svg");
+    padding: 25px;
+    color: white;
+    
+    text-align: left;
+    font-size: 26px;
+    position: relative;
+}
+.section2h1 .laptop{
+    width: 120px;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    z-index: 99;
+}
+.section2h1 .ipad{
+    position: absolute;
+    top: 45px;
+    right: -30px;
+}
+.section2h2{
+    background: url("./assets/section2heading1.svg");
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+.section2h3{
+    background: url("./assets/section2heading3.svg");
+    color: white;
+    padding: 25px;
+    text-align: left;
+    font-size: 24px;
+    position: relative;
+    margin-top: 25px;
+}
+.section2h3 img{
+    position: absolute;
+    top: -30px;
+    left: -10px;
+}
+.section2h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.section2h4 button{
+    background-color: transparent;
+    border: 1px solid  rgb(0, 113, 227);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color:  rgb(0, 113, 227);
+}
+.section2h4 button:hover{
+    cursor: pointer;
+    background-color:  rgb(0, 113, 227);
+    color: white;
+}
+
+/* section 2 ends here  */
+
+/* section 3 starts here  */
+
+.section3{
+    width: 95%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.section3Content1{
+    border: 1px solid red;
+    width: 47%;
+    height: 500px;
+    background: url("./assets/macbook.jpg") no-repeat center;
+    background-size: cover;
+}
+.section3Content2{
+    width: 50%;
+}
