@@ -1,0 +1,22 @@
+Grid Container : wo element jisme grid layout apply hota hai. ex:disply:grid;
+
+Grid Items : wo elements jo grid container ke andar hote hai.
+
+Grid Lines : horizontal aur vertical lines jo grid cells banate hai.
+
+Grid Cell : Ek choti box jisme ek item aa sakhta hai.
+
+Grid Track : Ek complete row ya column.
+
+Grid Area : ek ya zyada connected grid cells ka group.
+
+Fractional Unit ( 1 fr = remaining available space ka ek hissa ) 
+
+
+
+
+
+
+
+
+
