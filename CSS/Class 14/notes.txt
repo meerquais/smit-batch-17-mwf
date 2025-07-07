@@ -1,0 +1,19 @@
+Transform functions:
+
+translateX() = X-axis
+translateY() = Y-axis
+translate(x,y) = X-axis aur Y-axis
+
+scaleX() = X-axis
+scaleY() = Y-axis
+scale() = Size bada/chota
+
+rorate(deg)= element ko ghoomana
+skewX() = x-axis direction mein tilt
+skewY() = y-axis direction mein tilt
+skew(x,y) = x-axis aur y-axis direction mein tilt
+
+
+
+
+

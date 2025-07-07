@@ -1,0 +1,61 @@
+/* .size{
+    font-size: 15px;
+    color: red;
+}
+.color{
+    color: blue;
+}
+.container{
+    display: flex;
+    align-items: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* h1{
+    font-family: "Bitcount Grid Double" , sans-serif , 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+p{ */
+    /* font-family: "Manufacturing Consent"; */
+    /* font-family: "Noto Serif";
+}
+
+i{
+    color: blue;
+} */
+
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* transform: translateX(100px); */
+    /* transform: translateY(-50px); */
+    /* transform: translate(100px, 50px); */
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transform: scale(1);
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 50px;
+    transform: rotate(360deg);
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin-top: 30px;
+    transform: skew(20deg , 30deg);
+}
