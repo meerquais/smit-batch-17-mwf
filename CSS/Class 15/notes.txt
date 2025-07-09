@@ -1,0 +1,76 @@
+Transform functions:
+
+translateX() = X-axis
+translateY() = Y-axis
+translate(x,y) = X-axis aur Y-axis
+
+scaleX() = X-axis
+scaleY() = Y-axis
+scale() = Size bada/chota
+
+rorate(deg)= element ko ghoomana
+skewX() = x-axis direction mein tilt
+skewY() = y-axis direction mein tilt
+skew(x,y) = x-axis aur y-axis direction mein tilt
+
+
+
+transition: property duration timing-function delay;
+
+transition-property: kis property par transition apply  karna hai.
+
+transition-duration: transition complete hone mein kitna time.
+
+transition-timing-function: speed curve define karta hai.
+
+transition-delay: kitni der baad transition start ho.
+
+
+timing functions:
+
+ease(default) => Slow > fast > slow.
+
+linear => constant speed.
+
+ease-in => dheere start , fast end.
+
+ease-out => fast start, dheere sy end.
+
+ease-in-out => dheere start and end.
+
+
+
+
+@keyframes => steps define karta hai.
+
+animation-name => animation ka naam.
+
+animation-duration => time to complete.
+
+animation-delay => start se pehle rukna.
+
+animation-timing-function => speed curve.
+
+animation-iteration-count =>kitni baar repeat.
+
+animation-direction => normal , reverse , alternate
+
+animation-fill-mode => End style retain ho ya na ho.
+
+animation-play-state => play ya pause.
+
+animation => shorthand sab properties ka.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
