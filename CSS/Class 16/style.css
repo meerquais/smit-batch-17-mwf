@@ -1,0 +1,205 @@
+/* .box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: changeColor;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes changeColor {
+    20% {
+            background-color: red;
+    }
+
+    60% {
+        background-color: green;
+    }
+
+    100%{
+        background-color: limegreen;
+    }
+} */
+
+
+
+@keyframes rotateBox {
+    from {
+        transform: rotate(0deg);
+    }   
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* .box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: rotateBox;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.box:hover{
+    animation-play-state: running;
+} */
+
+/* 
+.card{
+    width: 300px;
+    height: 180px;
+    background-color: rgb(178, 174, 174);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}*/
+
+/* h3{
+    padding: 10px;
+} 
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.card{
+    width: 300px;
+     height: 180px;
+    background-color: rgb(178, 174, 174);
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0,0, 0.2);
+    animation: slideIn 0.6s ease-out forwards;
+} */
+
+
+/* h3{
+    padding: 10px;
+}  */
+
+/* @keyframes pulse {
+    0% , 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+
+.card{
+    width: 250px;
+    height: 150px;
+    background-color: #737171;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.15);
+
+    animation: pulse 2s ease-in-out infinite;
+} */
+
+/* 
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 38ch;
+    }
+    60%{
+        width: 38ch;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typing-container{
+    width: 38ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    font-family: monospace;
+    font-size: 24px;
+    animation: typing 4s steps(38) 1s infinite , blink 0.7s step-end infinite;
+} */
+
+
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    content: "❤️";
+}
+
+
+.quotes::before{
+    content: "“";
+    color: gray;
+    font-size: 24px;
+}
+
+.quotes::after{
+    content: "”";
+    color: gray;
+    font-size: 24px;
+}
+
+
+.arrow-btn::after{
+    content: "🔜";
+    font-weight: bold;
+    color: royalblue;
+}
+.arrow-btn::before{
+    content: "⬅️";
+    font-weight: bold;
+    color: royalblue;
+}
+
+.fancy-link{
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+.fancy-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s;
+}
+
+.fancy-link:hover::after{
+    width: 100%;
+}
