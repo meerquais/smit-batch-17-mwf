@@ -1,0 +1,54 @@
+1.Distributed Version Control
+
+2. Tracks Changes ( code , files , folders)
+
+3. Branching and Merging
+
+4. Rollback to Previous Versions
+
+5. Collaboration Friendly.
+
+
+forking
+git config --global user.name "Meer Quais"
+
+git config --global user.email "meerquais017@gmail.com"
+
+
+
+
+
+git init - new repo banata hai. new repo initialize 
+
+git status - check karta current state.
+
+git add  - changes ko stage karta hai.
+
+git commit -m  "commit here" - changes save karta hai.
+
+git remote add origin "Repo link here"
+
+git push -u origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
