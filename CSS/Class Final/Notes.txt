@@ -1,0 +1,9 @@
+--variables = reuseable values
+
+[attr] = target elements based on html attribute values.
+
+[attr^=value] = starts with
+
+[attr$=value] = ends with
+
+[attr*=value] = contains values
