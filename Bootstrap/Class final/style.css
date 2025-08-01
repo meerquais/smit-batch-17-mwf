@@ -1,0 +1,11 @@
+:root{
+    --r: 1.6rem;
+}
+
+
+.bg-custom{
+    background-color: #9bb0e1;
+}
+.custom-border-raidus{
+   border-radius: calc(var(--r) * 2) calc(var(--r) * 2) 0 0 / var(--r);
+}
