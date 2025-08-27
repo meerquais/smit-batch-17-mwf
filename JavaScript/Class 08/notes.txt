@@ -1,0 +1,7 @@
+.pop() ===> removes last array element and returns it
+
+.push() ===> Adds single or multiple values to last array element.
+
+.Shift() ===> Removes starting array element and returns it.
+
+.unshift() ===> adds single or multiple values to starting array element.
