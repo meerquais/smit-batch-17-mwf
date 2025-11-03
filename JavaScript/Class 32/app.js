@@ -85,12 +85,34 @@ console.log("JavaScript Connected!");
 // root.innerHTML = "<p>This is also an paragraph crated dynamically!</p>";
 
 
-console.log(document.children[0].children[1]);
+// console.log(document.children[0].children[1]);
 
-var body = document.children[0].children[1]
+// var body = document.children[0].children[1]
 
-var newHeading = document.createElement("h1");
+// var newHeading = document.createElement("h1");
 
-newHeading.textContent = "This is a heading created Dynamically using js!";
+// newHeading.textContent = "This is a heading created Dynamically using js!";
 
-body.appendChild(newHeading)
+// body.appendChild(newHeading)
+
+// function foo(){
+//     console.log("Triggered!");
+    
+// }
+
+
+// var box = document.getElementById("box");
+
+// var first = box.children[0];
+
+// var sameFirst = box.firstElementChild;
+
+// console.log(first);
+// console.log(sameFirst);
+
+
+var box = document.getElementById("box");
+
+var last = box.lastElementChild;
+
+console.log(last);
