@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.wrap{
+    width: 380px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.input-row{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+#inputTask{
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#addBtn{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-list{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.task-set{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.task li{
+    list-style-type: none;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.icons button{
+    margin-left: 6px;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.icons button.edit{
+    background-color: #e6f0ff;
+}
+.icons button.del{
+    background-color: #ffe6e6;
+}
