@@ -124,20 +124,123 @@ console.log("Js Connected!");
 // }
 
 
-function validateZIP(){
-    let zip = document.getElementById("zip").value;
-    let numChars = zip.length;
-    if(numChars < 5){
-        alert("Please enter a 5-digit number");
-        return false;
+// function validateZIP(){
+//     let zip = document.getElementById("zip").value;
+//     let numChars = zip.length;
+//     if(numChars < 5){
+//         alert("Please enter a 5-digit number");
+//         return false;
+//     }
+
+//     for(var i = 0; i < 4; i++){
+//         var thisChar = parseInt(zip[i]);
+//         if(isNaN(thisChar)){
+//             alert("Please enter valid numbers!");
+//             return false;
+//         }
+//     }
+
+// }
+
+
+// function validateEmail(){
+//     let email = document.getElementById("email").value;
+//     console.log(email);
+    
+
+//     if(email.indexOf(" ") !== -1){
+//         alert("No spaces allowed in email address!")
+//         return false;
+//     }
+
+// }
+
+// var email = "MeerQuais";
+
+// console.log(email.indexOf(" "));
+
+
+
+// function validateEmail(){
+//     let email = document.getElementById("email").value;
+
+//     var at = email.indexOf("@");
+//     if(at < 1 || at > email.length - 5){
+//         alert("Invalid Position of @")
+//         return false;
+//     }
+//     return true;
+// }
+
+// function validateEmail(){
+//     let email = document.getElementById("email").value;
+
+//     let at = email.indexOf("@");
+//     let dot = email.indexOf(".");
+
+//     if(dot - at < 2 || dot > email.length - 3 ){
+//         alert("Dot location invalid");
+//         return false;
+//     }
+//     if(at < 1 || at > email.length - 5){
+//          alert("Invalid Position of @")
+//          return false;
+//      }
+//     if(email.indexOf(" ") !== -1){
+//         alert("No spaces allowed in email address!")
+//        return false;
+//     }
+//     return true;
+// }
+
+// function validateEmail(){
+//     let e = document.getElementById("email").value;
+//     let firstAt = e.indexOf("@");
+//     let lastAt = e.lastIndexOf("@");
+
+//     if(firstAt === -1 || firstAt !== lastAt){
+//         alert("Email must contain Exactly One @");
+//         return false;
+//     }
+//     return true;
+// }
+
+// function validateEmail(){
+//     let e = document.getElementById("email").value.trim();
+//     var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+//     if(!regex.test(e)){
+//         alert("Enter a valid Email!")
+//         return false;
+//     }
+//     return true;
+// }
+
+
+// function isValidPassword(password) {
+//   const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/;
+//   return strongPasswordRegex.test(password);
+// }
+
+
+// console.log(isValidPassword("abc123"));
+// console.log(isValidPassword("Sameer@321"));
+// console.log(isValidPassword("$03Captial"));
+
+
+function greetWorld(){
+
+    try {
+    var greeting = "Hello World!";
+    aler(greeting);
+        
+    } catch (error) {
+        alert(error)
     }
 
-    for(var i = 0; i < 4; i++){
-        var thisChar = parseInt(zip[i]);
-        if(isNaN(thisChar)){
-            alert("Please enter valid numbers!");
-            return false;
-        }
-    }
 
+
+   
 }
+
+greetWorld()
