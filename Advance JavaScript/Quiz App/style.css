@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #182848;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    background-color: rgb(130, 133, 135);
+    width:100%;
+    border-radius: 17px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    color: green;
+}
+
+.section1 button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: rgb(79, 163, 233);
+    color: white;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.section{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #243b55;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 350px;
+}
+
+section.active{
+    display: flex;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #45a049;
+}
+
+ul{
+    list-style: none;
+    margin-top: 15px;
+    width: 100%;
+}
+ul li{
+    background-color: #2c3e50;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+}
+
+ul li:hover{
+    background-color: #3b4a5a;
+}
+
+.correntAns{
+    background-color: green !important;
+}
+.wrongAns{
+    background-color: red !important;
+}
+
+.disableli{
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+
+.result{
+    text-align: center;
+}
+
+.circular-progress{
+    position: relative;
+    height: 120px;
+    width: 120px;
+    background: conic-gradient(#182848 0deg, #ededed 0deg);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 20px auto;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #243b55;
+    border-radius: 50%;
+}
+.progress-value{
+    position: relative;
+    font: 20px;
+    font-weight: bold;
+}
+
+
+.pass-para{
+    color: lightgreen;
+    font-weight: bold;
+}
+.fail-para{
+    color: red;
+    font-weight: bold;
+}
+.formwrapper{
+    display: flex;
+}
