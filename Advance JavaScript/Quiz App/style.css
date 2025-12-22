@@ -99,7 +99,7 @@ ul li:hover{
     background-color: #3b4a5a;
 }
 
-.correntAns{
+.correctAns{
     background-color: green !important;
 }
 .wrongAns{

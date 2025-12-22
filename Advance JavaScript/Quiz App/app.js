@@ -25,12 +25,12 @@ let quesArray = [
     num: 3,
     question: "JavaScript code ko HTML mein add karne ke liye kaunsa tag use hota hai?",
     Option: {
-      a: "<js>",
-      b: "<javascript>",
-      c: "<script>",
-      d: "<code>"
+      a: "js",
+      b: "javascript",
+      c: "script",
+      d: "code"
     },
-    answer: "<script>"
+    answer: "script"
   },
   {
     num: 4,
@@ -168,8 +168,136 @@ function startQuiz(){
   text: "Please fill all the value!",
   icon: "error"
 });
+  }
+
+  userForm.style.display = "none";
+  startScreen.style.display = "flex"
+
+
+  document.getElementById("para-name").innerText = inpName.value
+  document.getElementById("para-email").innerText = inpEmail.value
+  document.getElementById("para-roll").innerText = inpRoll.value
+
+  ttlq.innerHTML = totalQus;
+
+}
+
+function loadQuestion(){
+  quizBody.style.display = "flex";
+  startScreen.style.display = "none";
+
+
+  let q = quesArray[counter];
+
+  Ques.innerHTML = q.question;
+  Opt[0].innerHTML = q.Option.a
+  Opt[1].innerHTML = q.Option.b
+  Opt[2].innerHTML = q.Option.c
+  Opt[3].innerHTML = q.Option.d
+
+  console.log(q);
+
+  document.querySelector(".numb").innerHTML = counter + 1
+
+  for(let li of Opt){
+    li.classList.remove("correctAns" , "wrongAns" , "disableli");
+    li.setAttribute("onclick" , "selectOpt(this)");
+  }
+
+  btn3.style.display = "none"
+}
+
+function selectOpt(ele){
+
+  if(ele.innerHTML === quesArray[counter].answer){
+    ele.className = "correctAns";
+    corrAns++
+  }else{
+    ele.className = "wrongAns";
+    wrngAns++
+  
+    for(let li of Opt){
+    if(li.innerHTML === quesArray[counter].answer){
+      li.classList.add("correctAns");
+    }
+  }
+}
+
+  for(let li of Opt){
+    li.classList.add("disableli");
+    btn3.style.display = "block";
+  }
+
+}
+
+
+function nextQuestion(){
+
+  counter++
+  if(counter < quesArray.length){
+    loadQuestion()
+  }else{
+    showResult()
+  }
+}
+
+
+function showResult(){
+
+  quizBody.style.display = "none";
+  resultBody.style.display = "flex";
+
+  resName.innerHTML = inpName.value
+  resEmail.innerHTML = inpEmail.value
+  resRoll.innerHTML = inpRoll.value
+  resInst.innerHTML = inpInst.value;
+
+
+  ttl.innerHTML = quesArray.length;
+  ra.innerHTML = corrAns;
+  wa.innerHTML = wrngAns;
+
+  let percentage = Math.round((corrAns / totalQus) * 100);
+
+  perc.innerHTML = percentage + "%";
+
+  if(percentage < 60){
+    define.innerHTML = "Sorry you failed! Try Again!"
+
+    define.classList.add("fail-para")
+  }else{
+    define.innerHTML = "Congo, You Passed!";
+
+    define.classList.add("pass-para");
+  }
+
+
+  let progressStart = 0;
+  
+  let progressEnd;
+
+
+  if(percentage <0){
+    progressEnd = 1
+  }else{
+    progressEnd = percentage
+  }
+
+
+  let speed = 100;
+  let progress = setInterval(() => {
+    progressStart = progressStart +1;
+    progressValue.textContent = progressStart + "%"
+
+    circularProgress.style.background = "conic-gradient(#4caf50 " + (progressStart * 3.6) + "deg, #ededed"
+
+    if(progressStart >= progressEnd){
+      clearInterval(progress)
     }
 
+
+
+  }, speed);
 
 
 
