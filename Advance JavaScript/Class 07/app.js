@@ -228,19 +228,97 @@ console.log("Js Connected!");
 // console.log(isValidPassword("$03Captial"));
 
 
-function greetWorld(){
+// function greetWorld(){
 
-    try {
-    var greeting = "Hello World!";
-    aler(greeting);
+//     try {
+//     var greeting = "Hello World!";
+//     aler(greeting);
         
-    } catch (error) {
-        alert(error)
-    }
+//     } catch (error) {
+//         alert(error)
+//     }
 
 
 
    
-}
+// }
 
-greetWorld()
+// greetWorld()
+
+
+
+
+
+
+// function greetWorld(){
+//     let greet = "Hello World!";
+
+//     aler(greet);
+// }
+
+// greetWorld()
+
+
+// function greetWorld(){
+
+
+//     try {
+        
+//         let greet = "Hello World!";
+//         aler(greet)
+
+
+//     } catch (error) {
+//         alert(error)
+//     }
+
+
+// }
+
+// greetWorld()
+
+
+
+
+
+// function checkPassword(){
+//     try {
+
+
+//         let password = document.getElementById("f1").value;
+
+//         if(password.length < 8){
+//             throw "Please enter at least 8 chars"
+//         }
+//         if(password.indexOf(" ") !== -1){
+//             throw "No spaces in the password, please.";
+//         }
+
+//         let numberSomewhere = false;
+
+//         // for(var i = 0; i < password.length;i++){
+//         //     if(isNaN(i , i +1) === false){
+//         //         numberSomewhere = true;
+//         //         break;
+//         //     }
+//         // }
+//         // if(numberSomewhere === false){
+//         //     throw "Please add at least 1 number."
+//         // }
+
+
+
+//     } catch (error) {
+//         alert(error)
+//     }
+// }
+
+
+// let pass = "Meer ";
+
+
+// console.log(pass.indexOf(" ") !== -1);
+
+
+// console.log(true == 1);
+// console.log(false === -1);
