@@ -14,14 +14,14 @@
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyCwAZuAoHOQYqqnmk-F94cqLUoYv1B9KDA",
-    authDomain: "to-do-3f167.firebaseapp.com",
-    projectId: "to-do-3f167",
-    storageBucket: "to-do-3f167.firebasestorage.app",
-    messagingSenderId: "319665411968",
-    appId: "1:319665411968:web:4c7ec34b998630a4235365"
-  };
+ const firebaseConfig = {
+  apiKey: "AIzaSyAXQZO-TNG2Y24-O9PZqTDdhqalXThHGYM",
+  authDomain: "class-firebase-demo-ef556.firebaseapp.com",
+  projectId: "class-firebase-demo-ef556",
+  storageBucket: "class-firebase-demo-ef556.firebasestorage.app",
+  messagingSenderId: "53121313859",
+  appId: "1:53121313859:web:19d47b70efb0bffa51f8f6"
+};
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
