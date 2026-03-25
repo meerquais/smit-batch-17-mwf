@@ -57,15 +57,7 @@ function App() {
 
 
 
-      {/* <Routes>
-
-        <Route path='/dashboard' element={<Dashboard />}>
-
-        <Route path='profile' element={<Profile />} />
-        <Route path='settings' element={<Settings />} />
-        
-
-        </Route> */}
+       
 
 
 
@@ -81,10 +73,22 @@ function App() {
 
       </Routes> */}
 
-      <Routes >
+      {/* <Routes >
 
           <Route path='/' element={<Home />} />
           <Route path='/user/:id' element={<User />} />
+
+      </Routes> */}
+
+  <Routes>
+
+        <Route path='/dashboard' element={<Dashboard />}>
+
+        <Route path='profile' element={<Profile />} />
+        <Route path='settings' element={<Settings />} />
+        
+
+      </Route> 
 
       </Routes>
 
