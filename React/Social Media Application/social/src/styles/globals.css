@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 0% -10%, rgb(79 70 229 / 0.2), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgb(56 189 248 / 0.15), transparent 55%),
+    rgb(248 250 252);
+  color: rgb(15 23 42);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.dark body {
+  background:
+    radial-gradient(1200px 600px at 0% -10%, rgb(99 102 241 / 0.2), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgb(14 116 144 / 0.16), transparent 55%),
+    rgb(2 6 23);
+  color: rgb(226 232 240);
+}
+
+.feed-shell {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 1rem;
+}

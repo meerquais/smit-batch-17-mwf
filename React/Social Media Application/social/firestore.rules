@@ -1,0 +1,113 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function authUid() {
+      return request.auth.uid;
+    }
+
+    function isAdmin() {
+      return signedIn() && (
+        request.auth.token.role == "admin" ||
+        get(/databases/$(database)/documents/users/$(authUid())).data.role == "admin"
+      );
+    }
+
+    function userDoc(uid) {
+      return get(/databases/$(database)/documents/users/$(uid));
+    }
+
+    function sameKeys(before, after) {
+      return before.keys().hasAll(after.keys()) && after.keys().hasAll(before.keys());
+    }
+
+    function canMutateRelationshipArrays(before, after) {
+      return before.diff(after).changedKeys().hasOnly([
+        "followers",
+        "following",
+        "blockedUsers",
+        "followRequests",
+        "updatedAt"
+      ]);
+    }
+
+    function canReadPost(postData) {
+      return postData.visibility == "public" ||
+        (signedIn() && userDoc(postData.userId).data.followers.hasAny([authUid()])) ||
+        isAdmin();
+    }
+
+    function actorBlockedByAuthor(postData) {
+      return signedIn() && userDoc(postData.userId).data.blockedUsers.hasAny([authUid()]);
+    }
+
+    function isCounterOnlyUpdate() {
+      return request.resource.data.diff(resource.data).changedKeys().hasOnly([
+        "likesCount",
+        "commentsCount",
+        "updatedAt"
+      ]);
+    }
+
+    match /users/{uid} {
+      allow read: if signedIn();
+      allow create: if (signedIn() && authUid() == uid) || isAdmin();
+
+      allow update: if isAdmin() ||
+        (
+          signedIn() &&
+          authUid() == uid &&
+          sameKeys(resource.data, request.resource.data)
+        ) ||
+        (
+          signedIn() &&
+          canMutateRelationshipArrays(resource.data, request.resource.data)
+        );
+
+      allow delete: if isAdmin();
+    }
+
+    match /posts/{postId} {
+      allow read: if canReadPost(resource.data);
+      allow create: if signedIn() && request.resource.data.userId == authUid();
+      allow update: if
+        isAdmin() ||
+        (signedIn() && resource.data.userId == authUid()) ||
+        (
+          signedIn() &&
+          canReadPost(resource.data) &&
+          !actorBlockedByAuthor(resource.data) &&
+          isCounterOnlyUpdate()
+        );
+      allow delete: if isAdmin() || (signedIn() && resource.data.userId == authUid());
+
+      match /likes/{uid} {
+        allow read: if canReadPost(get(/databases/$(database)/documents/posts/$(postId)).data);
+        allow create, update, delete: if signedIn() &&
+          uid == authUid() &&
+          !actorBlockedByAuthor(get(/databases/$(database)/documents/posts/$(postId)).data);
+      }
+
+      match /comments/{commentId} {
+        allow read: if canReadPost(get(/databases/$(database)/documents/posts/$(postId)).data);
+        allow create: if signedIn() &&
+          request.resource.data.userId == authUid() &&
+          !actorBlockedByAuthor(get(/databases/$(database)/documents/posts/$(postId)).data);
+        allow update, delete: if isAdmin() || (signedIn() && resource.data.userId == authUid());
+      }
+    }
+
+    match /reports/{reportId} {
+      allow create: if signedIn() && request.resource.data.reporterId == authUid();
+      allow read: if isAdmin();
+      allow update, delete: if isAdmin();
+    }
+
+    match /notifications/{uid}/items/{notifId} {
+      allow read, write: if isAdmin() || (signedIn() && authUid() == uid);
+    }
+  }
+}
