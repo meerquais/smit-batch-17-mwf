@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload</title>
+
+    <style>
+      body {
+        background-color: #111;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 40px;
+      }
+      form {
+        margin-bottom: 30px;
+      }
+
+      .images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: #222;
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Upload Image</h1>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" required />
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <div class="images">
+      <% files.forEach((file)=>{ %>
+
+      <div class="card">
+        <img src="<%=file.imageURL %>" />
+        <p><%= file.fileName %></p>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>
